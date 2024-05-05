@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Gordons</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>DE GORDONS</h1>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="My Blog Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="searchBox" onkeyup="searchPosts()" placeholder="Search posts...">
+
+    </header>
+    <main>
+        <article>
+            <h2>Welcome to My Blog</h2>
+            <p>This is your first post. Edit or delete it, then start blogging!</p>
+        </article>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/godwin.danjuma.50596" target="_blank" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/DanjumaGodwin7?t=3GbbrEvb_cD52ZfAJyjbxA&s=09" aria-label="x" target="_blank" title="X"><i class="fab fa-x"></i></a>
+            <a href="https://www.instagram.com/the_gordons04?igsh=dXo4aGE3eXBtMGk2" aria-label="Instagram" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>Copyright © 2024 De Gordons</p>
+    </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDfFRqQIWjQv9vDSmQyiaCs7Tu7zU8Yvp4",
+          authDomain: "de-gordons.firebaseapp.com",
+          projectId: "de-gordons",
+          storageBucket: "de-gordons.appspot.com",
+          messagingSenderId: "763255930195",
+          appId: "1:763255930195:web:2530347ef52b3ec521f5a6",
+          measurementId: "G-RY3W1EN0MV"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
